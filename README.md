@@ -1,1 +1,0 @@
-# Hanazono Lite webfonts

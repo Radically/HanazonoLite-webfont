@@ -7,15 +7,23 @@ jobs:
     container:
       image: transfusion/font-splitter
     steps:
+      - run: apk update && apk upgrade && apk add --no-cache bash git openssh python3 py3-pip curl
+      - run: git --version
+      - run: python --version
       - uses: actions/checkout@v2
-        with:
-          submodules: recursive
+      # - name: Set up Python 3.9.x
+      #   uses: actions/setup-python@v2
+      #   with:
+      #     python-version: 3.9.x
 
-      - run: sudo apt install wget
-      - name: Set up Python 3.9.x
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.9.x
+      - name: Files
+        run: ls -lah && ls -lah /
+
+      - run: python --version
+      - run: echo $PATH
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1.1.1
 
       - name: Cache Poetry virtualenv
         uses: actions/cache@v1
@@ -37,6 +45,3 @@ jobs:
 
       - name: What OS is running
         run: uname -a && cat /etc/issue
-
-      - name: Files
-        run: ls -lah && ls -lah /
