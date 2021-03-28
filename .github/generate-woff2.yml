@@ -1,0 +1,42 @@
+name: Test font-splitter container
+
+on: push
+jobs:
+  print-information:
+    runs-on: ubuntu-latest
+    container:
+      image: transfusion/font-splitter
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - run: sudo apt install wget
+      - name: Set up Python 3.9.x
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9.x
+
+      - name: Cache Poetry virtualenv
+        uses: actions/cache@v1
+        id: cache
+        with:
+          path: ~/.virtualenvs
+          key: poetry-${{ hashFiles('**/poetry.lock') }}
+          restore-keys: |
+            poetry-${{ hashFiles('**/poetry.lock') }}
+
+      - name: Set Poetry config
+        run: |
+          poetry config virtualenvs.in-project false
+          poetry config virtualenvs.path ~/.virtualenvs
+
+      - name: Install Dependencies
+        run: poetry install
+        if: steps.cache.outputs.cache-hit != 'true'
+
+      - name: What OS is running
+        run: uname -a && cat /etc/issue
+
+      - name: Files
+        run: ls -lah && ls -lah /
