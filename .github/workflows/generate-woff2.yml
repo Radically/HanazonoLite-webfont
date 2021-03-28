@@ -7,7 +7,9 @@ jobs:
     container:
       image: transfusion/font-splitter
     steps:
-      - run: apk update && apk upgrade && apk add --no-cache bash git openssh python3 py3-pip curl
+      - run: apk update && apk upgrade && apk add --no-cache bash git openssh python3 py3-pip curl nodejs npm
+      - run: npm install clean-css-cli -g
+      - run: cleancss
       - run: git --version
       - run: python --version
       - uses: actions/checkout@v2
