@@ -58,7 +58,7 @@ def remove_downloaded_otf():
 def generate_woff2(is_mincho: bool):
     font_splitter = program_args.font_splitter
     locale = program_args.locale
-    cjk = program_args.cjk
+    cjk = program_args.cjk == "1"
 
     # Generate Mincho and Gothic
 

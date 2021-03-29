@@ -85,7 +85,7 @@ jobs:
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          branch: built-${{ matrix.branch-cjk }}-${{ matrix.locale-suffix }}
+          branch: built-${{ matrix.branch-cjk }}-${{ matrix.locale-suffix }}-testing
 
       - name: Release
         uses: softprops/action-gh-release@v1
