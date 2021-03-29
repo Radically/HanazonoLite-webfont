@@ -9,7 +9,8 @@ from .constants import *
 
 parser = argparse.ArgumentParser()
 parser.add_argument("font_splitter", help="Path to font-splitter binary")
-# parser.add_argument("locale", help="g, t, h, j, k, or v")
+parser.add_argument("locale", help="g, t, h, j, k, or v")
+parser.add_argument("cjk", help="1 for CJK, 0 for single language")
 
 rls = None
 program_args = None
@@ -54,9 +55,14 @@ def remove_downloaded_otf():
     subprocess.Popen("rm *.otf", shell=True)
 
 
-def generate_woff2(locale: str, is_mincho: bool, cjk):
+def generate_woff2(is_mincho: bool):
     font_splitter = program_args.font_splitter
-    dirname = f"{'Mincho' if is_mincho else 'Gothic'}/{LOCALES[locale]['suffix']}/{'CJK' if cjk else 'single'}"
+    locale = program_args.locale
+    cjk = program_args.cjk
+
+    # Generate Mincho and Gothic
+
+    dirname = f"{'Mincho' if is_mincho else 'Gothic'}"
     family_name = (
         f"Hanazono {'Mincho' if is_mincho else 'Gothic'} Lite{' CJK' if cjk else ''}"
     )
@@ -113,16 +119,15 @@ def generate_woff2(locale: str, is_mincho: bool, cjk):
     )
     f.close()
 
-    subprocess.run(["npm", "pack", dirname])
+    subprocess.run(["npm", "pack", f"./{dirname}"])
 
 
 def cli(args=None):
     global program_args
     program_args = parser.parse_args()
-    print(program_args.font_splitter)
-    for (is_mincho, cjk) in [(x, y) for x in [True, False] for y in [True, False]]:
-        for locale in ["g", "t", "h", "j", "k", "v"]:
-            generate_woff2(locale, is_mincho, cjk)
 
-        # break
+    for is_mincho in [True, False]:
+        generate_woff2(is_mincho)
+
+    # break
     # finally at the end, commit back to repo (after this script has ended)
