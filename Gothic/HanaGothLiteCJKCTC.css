@@ -1,0 +1,256 @@
+/**
+ * Font Splitter
+ * https://github.com/VdustR/font-splitter
+ */
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.Basic-Latin.woff2) format('woff2');
+  unicode-range: U+0-1f;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-A.woff2) format('woff2');
+  unicode-range: U+4db8-4db9;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-C-1.woff2) format('woff2');
+  unicode-range: U+2a700-2aaff;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-C-2.woff2) format('woff2');
+  unicode-range: U+2ab00-2aeff;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-C-3.woff2) format('woff2');
+  unicode-range: U+2af00-2b2ff;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-C-4.woff2) format('woff2');
+  unicode-range: U+2b300-2b6ff;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-C-5.woff2) format('woff2');
+  unicode-range: U+2b700-2b734;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-D.woff2) format('woff2');
+  unicode-range: U+2b740-2b81d;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-E-1.woff2) format('woff2');
+  unicode-range: U+2b820-2bc1f;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-E-2.woff2) format('woff2');
+  unicode-range: U+2bc20-2c01f;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-E-3.woff2) format('woff2');
+  unicode-range: U+2c020-2c41f;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-E-4.woff2) format('woff2');
+  unicode-range: U+2c420-2c81f;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-E-5.woff2) format('woff2');
+  unicode-range: U+2c820-2cc1f;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-E-6.woff2) format('woff2');
+  unicode-range: U+2cc20-2cea1;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-F-1.woff2) format('woff2');
+  unicode-range: U+2ceb0-2d2af;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-F-2.woff2) format('woff2');
+  unicode-range: U+2d2b0-2d6af;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-F-3.woff2) format('woff2');
+  unicode-range: U+2d6b0-2daaf;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-F-4.woff2) format('woff2');
+  unicode-range: U+2dab0-2deaf;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-F-5.woff2) format('woff2');
+  unicode-range: U+2deb0-2e2af;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-F-6.woff2) format('woff2');
+  unicode-range: U+2e2b0-2e6af;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-F-7.woff2) format('woff2');
+  unicode-range: U+2e6b0-2eaaf;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-F-8.woff2) format('woff2');
+  unicode-range: U+2eab0-2ebe0;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-G-1.woff2) format('woff2');
+  unicode-range: U+30000-303ff;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-G-2.woff2) format('woff2');
+  unicode-range: U+30400-307ff;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-G-3.woff2) format('woff2');
+  unicode-range: U+30800-30bff;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-G-4.woff2) format('woff2');
+  unicode-range: U+30c00-30fff;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Unified-Ideographs-Extension-G-5.woff2) format('woff2');
+  unicode-range: U+31000-3134a;
+}
+
+@font-face {
+  font-family: 'Hanazono Gothic Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaGothLiteCJKCTC'), local('HanaGothLiteCJKCTC'), url(HanaGothLiteCJKCTC.CJK-Compatibility-Ideographs-Supplement.woff2) format('woff2');
+  unicode-range: U+2f800-2fa1d;
+}
