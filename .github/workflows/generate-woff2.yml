@@ -1,13 +1,17 @@
-name: Test font-splitter container
+name: Generate woff2 tarballs using font-splitter container
 
-on: push
+on:
+  push:
+    tags:
+      - "testing-*"
+
 jobs:
-  print-information:
+  build:
     runs-on: ubuntu-latest
     container:
       image: transfusion/font-splitter
     steps:
-      - run: apk update && apk upgrade && apk add --no-cache bash git openssh python3 py3-pip curl nodejs npm
+      - run: apk update && apk upgrade && apk add --no-cache bash git python3 py3-pip curl nodejs npm build-base
       - run: npm install clean-css-cli -g
       - run: cleancss
       - run: git --version
@@ -47,3 +51,18 @@ jobs:
 
       - name: What OS is running
         run: uname -a && cat /etc/issue
+
+      - name: Generate woff2
+        run: poetry run driver /font-splitter/bin/font-splitter
+        env:
+          TEST_RUN: true
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            *.tgz
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
