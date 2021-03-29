@@ -17,6 +17,8 @@ jobs:
       - run: git --version
       - run: python --version
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
       # - name: Set up Python 3.9.x
       #   uses: actions/setup-python@v2
       #   with:
@@ -58,6 +60,9 @@ jobs:
           TEST_RUN: true
 
       - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: built
+
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
