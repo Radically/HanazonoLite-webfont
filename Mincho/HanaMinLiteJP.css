@@ -1,0 +1,31 @@
+/**
+ * Font Splitter
+ * https://github.com/VdustR/font-splitter
+ */
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaMinLiteTestJP'), local('HanaMinLiteTestJP'), url(HanaMinLiteTestJP.Basic-Latin.woff2) format('woff2');
+  unicode-range: U+0-1f;
+}
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaMinLiteTestJP'), local('HanaMinLiteTestJP'), url(HanaMinLiteTestJP.CJK-Unified-Ideographs.woff2) format('woff2');
+  unicode-range: U+89d0-89d9, U+9aa8-9aa9;
+}
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaMinLiteTestJP'), local('HanaMinLiteTestJP'), url(HanaMinLiteTestJP.CJK-Unified-Ideographs-Extension-F.woff2) format('woff2');
+  unicode-range: U+2e5d9;
+}
