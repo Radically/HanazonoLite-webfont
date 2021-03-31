@@ -17,60 +17,6 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('HanaMinLiteCJKCVN'), local('HanaMinLiteCJKCVN'), url(HanaMinLiteCJKCVN.CJK-Unified-Ideographs-Extension-C-1.woff2) format('woff2');
-  unicode-range: U+2a700-2aaff;
-}
-
-@font-face {
-  font-family: 'Hanazono Mincho Lite CJK';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('HanaMinLiteCJKCVN'), local('HanaMinLiteCJKCVN'), url(HanaMinLiteCJKCVN.CJK-Unified-Ideographs-Extension-C-2.woff2) format('woff2');
-  unicode-range: U+2ab00-2aeff;
-}
-
-@font-face {
-  font-family: 'Hanazono Mincho Lite CJK';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('HanaMinLiteCJKCVN'), local('HanaMinLiteCJKCVN'), url(HanaMinLiteCJKCVN.CJK-Unified-Ideographs-Extension-C-3.woff2) format('woff2');
-  unicode-range: U+2af00-2b2ff;
-}
-
-@font-face {
-  font-family: 'Hanazono Mincho Lite CJK';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('HanaMinLiteCJKCVN'), local('HanaMinLiteCJKCVN'), url(HanaMinLiteCJKCVN.CJK-Unified-Ideographs-Extension-C-4.woff2) format('woff2');
-  unicode-range: U+2b300-2b6ff;
-}
-
-@font-face {
-  font-family: 'Hanazono Mincho Lite CJK';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('HanaMinLiteCJKCVN'), local('HanaMinLiteCJKCVN'), url(HanaMinLiteCJKCVN.CJK-Unified-Ideographs-Extension-C-5.woff2) format('woff2');
-  unicode-range: U+2b700-2b734;
-}
-
-@font-face {
-  font-family: 'Hanazono Mincho Lite CJK';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('HanaMinLiteCJKCVN'), local('HanaMinLiteCJKCVN'), url(HanaMinLiteCJKCVN.CJK-Unified-Ideographs-Extension-D.woff2) format('woff2');
-  unicode-range: U+2b740-2b81d;
-}
-
-@font-face {
-  font-family: 'Hanazono Mincho Lite CJK';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
   src: local('HanaMinLiteCJKCVN'), local('HanaMinLiteCJKCVN'), url(HanaMinLiteCJKCVN.CJK-Unified-Ideographs-Extension-E-1.woff2) format('woff2');
   unicode-range: U+2b820-2bc1f;
 }
