@@ -17,6 +17,69 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
+  src: local('HanaMinLiteCJKBKR'), local('HanaMinLiteCJKBKR'), url(HanaMinLiteCJKBKR.Tangut-1.woff2) format('woff2');
+  unicode-range: U+17000-173ff;
+}
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaMinLiteCJKBKR'), local('HanaMinLiteCJKBKR'), url(HanaMinLiteCJKBKR.Tangut-2.woff2) format('woff2');
+  unicode-range: U+17400-177ff;
+}
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaMinLiteCJKBKR'), local('HanaMinLiteCJKBKR'), url(HanaMinLiteCJKBKR.Tangut-3.woff2) format('woff2');
+  unicode-range: U+17800-17bff;
+}
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaMinLiteCJKBKR'), local('HanaMinLiteCJKBKR'), url(HanaMinLiteCJKBKR.Tangut-4.woff2) format('woff2');
+  unicode-range: U+17c00-17fff;
+}
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaMinLiteCJKBKR'), local('HanaMinLiteCJKBKR'), url(HanaMinLiteCJKBKR.Tangut-5.woff2) format('woff2');
+  unicode-range: U+18000-183ff;
+}
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaMinLiteCJKBKR'), local('HanaMinLiteCJKBKR'), url(HanaMinLiteCJKBKR.Tangut-6.woff2) format('woff2');
+  unicode-range: U+18400-187f7;
+}
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaMinLiteCJKBKR'), local('HanaMinLiteCJKBKR'), url(HanaMinLiteCJKBKR.Tangut-Components.woff2) format('woff2');
+  unicode-range: U+18800-18aff;
+}
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
   src: local('HanaMinLiteCJKBKR'), local('HanaMinLiteCJKBKR'), url(HanaMinLiteCJKBKR.CJK-Unified-Ideographs-Extension-B-01.woff2) format('woff2');
   unicode-range: U+20000-203ff;
 }
@@ -387,5 +450,59 @@
   font-weight: 400;
   font-display: swap;
   src: local('HanaMinLiteCJKBKR'), local('HanaMinLiteCJKBKR'), url(HanaMinLiteCJKBKR.CJK-Unified-Ideographs-Extension-B-42.woff2) format('woff2');
-  unicode-range: U+2a400-2a6d6;
+  unicode-range: U+2a400-2a6dd;
+}
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaMinLiteCJKBKR'), local('HanaMinLiteCJKBKR'), url(HanaMinLiteCJKBKR.CJK-Unified-Ideographs-Extension-C-1.woff2) format('woff2');
+  unicode-range: U+2a700-2aaff;
+}
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaMinLiteCJKBKR'), local('HanaMinLiteCJKBKR'), url(HanaMinLiteCJKBKR.CJK-Unified-Ideographs-Extension-C-2.woff2) format('woff2');
+  unicode-range: U+2ab00-2aeff;
+}
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaMinLiteCJKBKR'), local('HanaMinLiteCJKBKR'), url(HanaMinLiteCJKBKR.CJK-Unified-Ideographs-Extension-C-3.woff2) format('woff2');
+  unicode-range: U+2af00-2b2ff;
+}
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaMinLiteCJKBKR'), local('HanaMinLiteCJKBKR'), url(HanaMinLiteCJKBKR.CJK-Unified-Ideographs-Extension-C-4.woff2) format('woff2');
+  unicode-range: U+2b300-2b6ff;
+}
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaMinLiteCJKBKR'), local('HanaMinLiteCJKBKR'), url(HanaMinLiteCJKBKR.CJK-Unified-Ideographs-Extension-C-5.woff2) format('woff2');
+  unicode-range: U+2b700-2b734;
+}
+
+@font-face {
+  font-family: 'Hanazono Mincho Lite CJK';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('HanaMinLiteCJKBKR'), local('HanaMinLiteCJKBKR'), url(HanaMinLiteCJKBKR.CJK-Unified-Ideographs-Extension-D.woff2) format('woff2');
+  unicode-range: U+2b740-2b81d;
 }
