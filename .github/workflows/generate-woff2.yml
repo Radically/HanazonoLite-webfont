@@ -44,10 +44,13 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
       - run: git remote -v
+      - name: Record current tag
+        id: vars
+        run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
       - uses: fregante/setup-git-user@v1
       - run: git fetch origin built-${{ matrix.branch-cjk }}-${{ matrix.locale-suffix }}-testing:built-${{ matrix.branch-cjk }}-${{ matrix.locale-suffix }}-testing
       - run: git checkout built-${{ matrix.branch-cjk }}-${{ matrix.locale-suffix }}-testing
-      - run: git merge ${{ github.head_ref }} --commit --no-edit
+      - run: git merge -X theirs ${{ steps.vars.outputs.tag }} --commit --no-edit --allow-unrelated-histories
       - run: rm -rf Mincho Gothic
 
       # - name: Set up Python 3.9.x
