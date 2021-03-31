@@ -18,7 +18,7 @@
   font-weight: 400;
   font-display: swap;
   src: local('HanaMinLiteCJKTestHK'), local('HanaMinLiteCJKTestHK'), url(HanaMinLiteCJKTestHK.CJK-Unified-Ideographs.woff2) format('woff2');
-  unicode-range: U+89d0-89d9, U+9aa8-9aa9;
+  unicode-range: U+7de8, U+89d0-89d9, U+9aa8-9aa9;
 }
 
 @font-face {
