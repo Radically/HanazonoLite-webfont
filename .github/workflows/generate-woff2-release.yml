@@ -8,6 +8,30 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        cjk: [1, 0]
+        locale: ["g", "t", "h", "j", "k", "v"]
+        include:
+          - cjk: 1
+            branch-cjk: cjk
+          - cjk: 0
+            branch-cjk: single
+          - locale: g
+            locale-suffix: SC
+          - locale: t
+            locale-suffix: TC
+          - locale: h
+            locale-suffix: HK
+          - locale: j
+            locale-suffix: JP
+          - locale: k
+            locale-suffix: KR
+          - locale: v
+            locale-suffix: VN
+
     container:
       image: transfusion/font-splitter
     steps:
@@ -55,13 +79,11 @@ jobs:
         run: uname -a && cat /etc/issue
 
       - name: Generate woff2
-        run: poetry run driver /font-splitter/bin/font-splitter
-        # env:
-        #   TEST_RUN: true
+        run: poetry run driver /font-splitter/bin/font-splitter ${{ matrix.locale }} ${{ matrix.cjk }}
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          branch: built
+          branch: built-${{ matrix.branch-cjk }}-${{ matrix.locale-suffix }}
 
       - name: Release
         uses: softprops/action-gh-release@v1
