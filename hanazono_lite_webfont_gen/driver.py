@@ -33,7 +33,7 @@ def download_otf(locale: str, is_mincho: bool, cjk: bool):
     search_regex = (
         f"Hana{'Min' if is_mincho else 'Goth'}Lite{'CJK' if cjk else ''}Test{LOCALES[locale]['suffix']}.otf\Z"
         if "TEST_RUN" in os.environ
-        else f"Hana{'Min' if is_mincho else 'Goth'}Lite{'CJK' if cjk else ''}([A-C0-9]{{1,2}}){LOCALES[locale]['suffix']}.otf\Z"
+        else f"Hana{'Min' if is_mincho else 'Goth'}Lite{'CJK' if cjk else ''}([A-D0-9]{{1,2}}){LOCALES[locale]['suffix']}.otf\Z"
     )
     tmp = list(
         filter(
