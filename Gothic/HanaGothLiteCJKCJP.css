@@ -18,7 +18,7 @@
   font-weight: 400;
   font-display: swap;
   src: local('HanaGothLiteCJKCJP'), local('HanaGothLiteCJKCJP'), url(HanaGothLiteCJKCJP.CJK-Unified-Ideographs.woff2) format('woff2');
-  unicode-range: U+4e38, U+5203, U+5962, U+6753, U+80ad, U+828b;
+  unicode-range: U+4e38, U+5203, U+52c7, U+5962, U+6753, U+80ad, U+828b, U+83cc;
 }
 
 @font-face {
